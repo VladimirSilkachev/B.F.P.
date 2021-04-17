@@ -1,0 +1,42 @@
+div {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#head {
+    text-align: center;
+    margin-top: 230px;
+}
+
+#knopka{
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: green;
+    padding: 5px;
+    color: white;
+    margin-left: 165px;
+    margin-bottom: 2px;
+}
+
+#surname{
+    padding-right: 18px;
+}
+
+body {
+    background-attachment: scroll;
+}
+
+.ramka{
+    background: #313331;
+    background-size: 50% auto;
+    color: white;
+    padding: 2px;
+    margin-right: 538px;
+    margin-left: 550px;
+    border-radius: 3px;
+}
+
+#login {
+    margin-left: 23px;
+}
