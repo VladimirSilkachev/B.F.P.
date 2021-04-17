@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
 <?php
 
 $login = $_POST['login'];
@@ -32,9 +24,14 @@ $l_array = explode(" ", $logins);
 $p_array = explode(" ", $passwords);
 $l = array_search ($login, $l_array);
 $p = array_search ($password, $p_array);
+setcookie("Login", $login, time()+3600);
 if (in_array($login, $l_array)) {
     if ($p !== false and $p === $l){
-        require("profile.php");
+        setcookie("Login", $login);
+        setcookie("Login", $login, time()+3600);
+        setcookie("Login", $login, time()+3600, "/~rasmus/", "example.com", 1);
+        header("Location: profile.php");
+        exit();
     } else {
         echo "Incorrect login or password";
     }
@@ -42,7 +39,3 @@ if (in_array($login, $l_array)) {
     require("Entrance.php");
     echo "Incorrect login or password";}
 ?>
-
-
-</body>
-</html>
