@@ -12,7 +12,6 @@ if($result)
     {
     $row = mysqli_fetch_row($result);
     if ($row[1] === $login){
-    echo $row[1];
     $info = array($row[3], $row[4], $row[5], $row[6], $row[7], $row[8]); // массив с данными профиля
     }
     }
