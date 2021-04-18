@@ -17,3 +17,28 @@ if($result)
     }
     }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<br>Name: <?php echo $info[1];?></br>
+<br>Surname: <?php echo $info[2];?></br>
+<br>Birth: <?php echo $info[3];?></br>
+<br>Address: <?php echo $info[4];?></br>
+<br>Sex: <?php echo $info[5];?></br>
+<br>Status of email: <?php echo $info[0];?></br>
+<?php
+if ($info[0] === FALSE){
+echo"email confirmed";
+}else{
+?>
+<a href="email.php">link email</a>
+<?php
+}?>
+
+</body>
+</html>
