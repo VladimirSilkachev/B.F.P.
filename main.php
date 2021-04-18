@@ -9,7 +9,7 @@
 
 <a href="Entrance.php">Entrance</a><br>
 <a href="Registration.php">Registration</a><br>
-<a href="new_pass.php">Forgot password?</a><br>
+<a href="change_pass.php">Forgot password?</a><br>
 
 </body>
 </html>
