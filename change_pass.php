@@ -18,12 +18,12 @@
 
     <div>
         <label id="login" for="password">New password</label>
-        <input type="password" name="password">
+        <input required type="password" name="password">
     </div>
 
     <div>
         <label for="2_password">Confirm new password</label>
-        <input type="password" name="2_password">
+        <input required type="password" name="2_password">
     </div>
 
     <div>
