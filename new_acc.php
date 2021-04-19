@@ -12,8 +12,9 @@ $sex = $_POST["sex"];
 
 
 
-$connect = mysqli_connect("localhost", "root", "", "user") or die("No connection");
-$write = "INSERT INTO `user` (`id`, `login`, `password`, `status`, `name`, `surname`, `birth`, `address`, `sex`) VALUES (NULL, '$login', '$password', '$status', '$name', '$surname', '$birth', '$address', '$sex')";
+$connect = mysqli_connect("localhost", "root", "", "users-data") or die("No connection");
+$write = "INSERT INTO `user` (`id`, `login`, `password`, `status`, `name`, `surname`, `birth`, `address`, `sex`, `$email`)
+ VALUES (NULL, '$login', '$password', '$status', '$name', '$surname', '$birth', '$address', '$sex', '$email')";
 $table = mysqli_query($connect, $write);
 
 echo "Registration completed successfully";
@@ -29,7 +30,7 @@ php?>
 </head>
 <body>
 
-<a href="Registration.php">Return</a>
+<a href="main.php">Go to back</a>
 
 </body>
 </html>
