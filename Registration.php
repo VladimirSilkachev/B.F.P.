@@ -1,5 +1,3 @@
-<?php
-php?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,15 +45,13 @@ php?>
     </div>
 
     <div>
+        <label for="email">Email</label>
+        <input type="text" name="email">
+    </div>
+
+    <div>
         <input id="knopka" type="submit" value="Register now">
     </div>
 
 </body>
 </html>
-
-
-
-
-
-<?php
-php?>
