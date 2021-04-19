@@ -3,7 +3,7 @@
 $login = $_POST['login'];
 $password = $_POST['password'];
 
-$connect = mysqli_connect("localhost", "root", "", "user") or die("No connection");
+$connect = mysqli_connect("localhost", "root", "", "users-data") or die("No connection");
 $query ="SELECT * FROM user";
 $result = mysqli_query($connect, $query) or die("No connection");
 $logins = "";
@@ -20,21 +20,23 @@ if($result)
     $passwords .= " ";
     }
     }
+
 $l_array = explode(" ", $logins);
 $p_array = explode(" ", $passwords);
 $l = array_search ($login, $l_array);
 $p = array_search ($password, $p_array);
-setcookie("Login", $login, time()+3600);
+setcookie("Login", $login, time()+60);
 if (in_array($login, $l_array)) {
     if ($p !== false and $p === $l){
         setcookie("Login", $login);
-        setcookie("Login", $login, time()+3600);
-        setcookie("Login", $login, time()+3600, "/~rasmus/", "example.com", 1);
+        setcookie("Login", $login, time()+36);
+        setcookie("Login", $login, time()+36, "/~rasmus/", "example.com", 1);
         header("Location: profile.php");
         exit();
     } else {
         echo "Incorrect login or password";
     }
+
 } else {
     require("Entrance.php");
     echo "Incorrect login or password";}
