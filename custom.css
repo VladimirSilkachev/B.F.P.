@@ -1,0 +1,52 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+.bbk_backgrond {
+    background: darkred;
+}
+
+.head {
+    font-size: 50px;
+    color: white;
+}
+
+.size_minigrid {
+    font-size: 10px;
+}
+
+body {
+    background: black;
+}
+
+.images {
+    margin: 100px 100px 0 10px;
+    width: 450px;
+    height: 400px
+}
+
+.images_right {
+    margin: 100px 100px 0 10px;
+    width: 450px;
+    height: 400px;
+    float: right;
+}
+
+.text_right {
+    height: 100px;
+	display: inline-block;
+	width: 30%;
+    margin: 100px 100px 0 10px;
+    color: white;
+}
+.text_left {
+    height: 100px;
+	display: inline-block;
+	width: 30%;
+    margin: 100px 100px 0 10px;
+    color: white;
+}
